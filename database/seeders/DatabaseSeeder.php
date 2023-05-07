@@ -38,6 +38,11 @@ class DatabaseSeeder extends Seeder
                 "name" => "Rap",
                 "city" => "Detroit",
                 "description" => "Rap has fast tempo and interesting lyrics"
+            ],
+            [
+                "name" => "Metal",
+                "city" => "London",
+                "description" => "Heavy metal is a genre with loud electric guitars and screaming vocals"
             ]
         ]);
 
@@ -76,6 +81,16 @@ class DatabaseSeeder extends Seeder
             "genre_id" => 2,
             "artist_id" => 2
         ]);
+
+        Song::create([
+            "title" => "Rap God",
+            "description" => "“Rap God” is Eminem's braggadocious ode to himself and his career. Over its six-minute run-time, he references comic books, throws back to his old songs.",
+            "length" => 420,
+            "rating" => 99,
+            "genre_id" => 1,
+            "artist_id" => 1
+        ]);
+
 
         // \App\Models\User::factory(10)->create();
 
